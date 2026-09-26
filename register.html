@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GroceryWala - Create Account</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="login-page">
+
+    <!-- HEADER -->
+    <header class="login-header">
+
+        <a href="shop.html" class="login-logo">
+            🛒 GroceryWala
+        </a>
+
+        <a href="shop.html" class="back-shop">
+            ← Back to Shop
+        </a>
+
+    </header>
+
+    <!-- REGISTRATION CONTAINER -->
+    <main class="login-container">
+
+        <div class="login-card">
+
+            <div class="login-icon">
+                🛒
+            </div>
+
+            <h1>Create Account</h1>
+
+            <p class="login-subtitle">
+                Join GroceryWala and start shopping!
+            </p>
+
+            <!-- REGISTRATION FORM -->
+            <form id="register-form">
+
+                <!-- NAME -->
+                <div class="input-group">
+
+                    <label for="name">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                </div>
+
+                <!-- EMAIL -->
+                <div class="input-group">
+
+                    <label for="register-email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="register-email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                </div>
+
+                <!-- PASSWORD -->
+                <div class="input-group">
+
+                    <label for="register-password">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="register-password"
+                        name="password"
+                        placeholder="Create a password"
+                        minlength="8"
+                        required
+                    >
+
+                </div>
+
+                <!-- MESSAGE -->
+                <p id="register-message" role="alert"></p>
+
+                <!-- SUBMIT BUTTON -->
+                <button
+                    type="submit"
+                    class="login-submit"
+                    id="register-button"
+                >
+                    Create Account
+                </button>
+
+            </form>
+
+            <div class="divider">
+                <span>OR</span>
+            </div>
+
+            <!-- LOGIN LINK -->
+            <p class="signup-text">
+                Already have an account?
+                <a href="login.html">Login</a>
+            </p>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="login-footer">
+
+        <p>
+            © 2026 GroceryWala. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="./Frontend/js/script.js"></script>
+
+</body>
+</html>

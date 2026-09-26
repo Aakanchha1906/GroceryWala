@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GroceryWala - Shop</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="shop-header">
+
+        <div class="logo">
+            🛒 GroceryWala
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search for groceries...">
+            <button>🔍</button>
+        </div>
+
+        <nav>
+
+            <div class="category-menu">
+                <a href="#">Shop by Categories ▾</a>
+
+                <div class="category-dropdown">
+                    <a href="#">🍎 Fruits</a>
+                    <a href="#">🥦 Vegetables</a>
+                    <a href="#">🥛 Dairy & Eggs</a>
+                    <a href="#">🍞 Bakery</a>
+                    <a href="#">🥫 Packaged Food</a>
+                    <a href="#">🥤 Beverages</a>
+                    <a href="#">🧴 Personal Care</a>
+                    <a href="#">🧹 Household</a>
+                </div>
+
+            </div>
+
+            <a href="wishlist.html">♡ Wishlist</a>
+
+            <a href="cart.html">🛒 Cart</a>
+
+            <span id="welcome-user" style="display: none;">
+                  Welcome, <strong id="user-name"></strong>!
+            </span>
+
+            <a href="login.html" class="login-btn" id="login-link">
+                Login
+            </a>
+
+            <button id="logout-btn" class="login-btn" style="display: none;">
+                 Logout
+            </button>
+        </nav>
+
+    </header>
+
+
+    <!-- WELCOME SECTION -->
+    <section class="shop-banner">
+
+        <div class="banner-content">
+
+            <h1>Freshness at Your Doorstep 🥬</h1>
+
+            <p>
+                Shop fresh groceries and everyday essentials
+                at the best prices.
+            </p>
+
+            <button>Start Shopping</button>
+
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+    <section class="category-section">
+
+        <h2>Shop by Category</h2>
+
+        <p class="category-subtitle">
+            Everything you need, all in one place
+        </p>
+
+        <div class="category-cards">
+
+            <div class="category-card">
+                <div class="category-icon">🍎</div>
+                <h3>Fruits</h3>
+                <p>Fresh & Juicy</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🥦</div>
+                <h3>Vegetables</h3>
+                <p>Farm Fresh</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🥛</div>
+                <h3>Dairy & Eggs</h3>
+                <p>Fresh Everyday</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🍞</div>
+                <h3>Bakery</h3>
+                <p>Freshly Baked</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🥫</div>
+                <h3>Packaged Food</h3>
+                <p>Daily Essentials</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🥤</div>
+                <h3>Beverages</h3>
+                <p>Refresh Yourself</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🧴</div>
+                <h3>Personal Care</h3>
+                <p>Care for You</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🧹</div>
+                <h3>Household</h3>
+                <p>Home Essentials</p>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- PRODUCTS -->
+<section class="product-section">
+
+    <h2>Our Products</h2>
+
+    <p class="product-subtitle">
+        Fresh products at the best prices
+    </p>
+
+    <div id="product-container" class="product-container">
+
+        <!-- Products will be loaded from MongoDB here -->
+
+    </div>
+
+</section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h3>🛒 GroceryWala</h3>
+
+        <p>
+            Fresh groceries. Great prices. Delivered to your doorstep.
+        </p>
+
+        <p class="copyright">
+            © 2026 GroceryWala. All Rights Reserved.
+        </p>
+
+    </footer>
+    <script src="./Frontend/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GroceryWala - Cart</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="cart-page">
+
+    <!-- HEADER -->
+
+    <header class="shop-header">
+
+        <a href="shop.html" class="logo">
+            🛒 GroceryWala
+        </a>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search for groceries...">
+            <button>🔍</button>
+        </div>
+
+        <nav>
+
+            <a href="shop.html">Shop by Categories ▾</a>
+
+            <a href="wishlist.html">♡ Wishlist</a>
+
+            <a href="cart.html" class="active-cart">
+                🛒 Cart
+            </a>
+
+            <a href="login.html" class="login-btn">
+                Login
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- CART SECTION -->
+
+    <main class="cart-container">
+
+        <h1>Shopping Cart 🛒</h1>
+
+        <p class="cart-subtitle">
+            Review your items before checkout
+        </p>
+
+
+        <div class="cart-content">
+
+          <!-- CART ITEMS SECTION -->
+<section class="cart-items">
+
+    <!-- Products from MongoDB will appear here -->
+    <div id="cart-items-container">
+
+        <!-- JavaScript will dynamically add cart products -->
+
+    </div>
+
+    <!-- CONTINUE SHOPPING -->
+    <a href="shop.html" class="continue-shopping">
+        ← Continue Shopping
+    </a>
+
+</section>
+
+
+            <!-- ORDER SUMMARY -->
+
+            <aside class="cart-summary">
+
+                <h2>Order Summary</h2>
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="cart-subtotal">₹0</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Delivery</span>
+                    <span>₹30</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Discount</span>
+                    <span class="discount">− ₹0</span>
+                </div>
+
+                <hr>
+
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span id="cart-total">₹0</span>
+                </div>
+
+                <a href="checkout.html" class="checkout-btn">
+                    Proceed to Checkout
+                </a>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        <h3>🛒 GroceryWala</h3>
+
+        <p>
+            Fresh groceries. Great prices.
+            Delivered to your doorstep.
+        </p>
+
+        <p class="copyright">
+            © 2026 GroceryWala. All Rights Reserved.
+        </p>
+    </footer>
+    <script src="./Frontend/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout - GroceryWala</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="checkout-page">
+
+    <!-- HEADER -->
+    <header class="checkout-header">
+
+        <div class="logo">
+            GroceryWala
+        </div>
+
+        <a href="./cart.html" class="back-cart">
+            ← Back to Cart
+        </a>
+
+    </header>
+
+
+    <!-- CHECKOUT -->
+    <main class="checkout-container">
+
+        <h1>Checkout</h1>
+
+        <p class="checkout-subtitle">
+            Complete your order
+        </p>
+
+
+        <div class="checkout-content">
+
+
+            <!-- CUSTOMER DETAILS -->
+
+            <section class="customer-details">
+
+                <h2>Delivery Details</h2>
+
+                <form id="checkout-form">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Mobile Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Enter your mobile number"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="address">
+                            Delivery Address
+                        </label>
+
+                        <textarea
+                            id="address"
+                            placeholder="Enter your complete address"
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="city">
+                                City
+                            </label>
+
+                            <input
+                                type="text"
+                                id="city"
+                                placeholder="Enter city"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="pincode">
+                                PIN Code
+                            </label>
+
+                            <input
+                                type="text"
+                                id="pincode"
+                                placeholder="Enter PIN code"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PAYMENT -->
+
+                    <h2>Payment Method</h2>
+
+                    <div class="payment-option">
+                        <span>💵 Cash on Delivery</span>
+                    </div>
+
+                        </label>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="place-order-btn"
+                    >
+                        Place Order
+                    </button>
+
+                </form>
+
+            </section>
+
+
+            <!-- ORDER SUMMARY -->
+
+            <section class="checkout-summary">
+
+                <h2>Order Summary</h2>
+
+                <div id="checkout-items">
+
+                    <!-- Cart products will appear here -->
+
+                </div>
+
+
+                <div class="checkout-summary-row">
+
+                    <span>Subtotal</span>
+
+                    <span id="checkout-subtotal">
+                        ₹0
+                    </span>
+
+                </div>
+
+
+                <div class="checkout-summary-row">
+
+                    <span>Delivery</span>
+
+                    <span>
+                        ₹30
+                    </span>
+
+                </div>
+
+
+                <div class="checkout-summary-total">
+
+                    <span>Total</span>
+
+                    <span id="checkout-total">
+                        ₹0
+                    </span>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+    <script src="./Frontend/js/script.js"></script>
+
+</body>
+
+</html>
