@@ -69,5 +69,12 @@ async function connectMongo() {
 connectMongo();
 
 const handler = serverless(app);
-module.exports = handler;
+
+module.exports = {
+  app,
+  handler,
+  default: handler
+};
+
 module.exports.handler = handler;
+module.exports.app = app;
