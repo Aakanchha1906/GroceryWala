@@ -22,14 +22,20 @@ app.use("/api/auth", authRoutes);
 // MONGODB CONNECTION
 // ==========================
 
-mongoose.connect(process.env.MONGO_URI)
-    .then(() => {
-        console.log("MongoDB connected successfully!");
-    })
-    .catch((error) => {
-        console.log("MongoDB connection failed:");
-        console.log(error.message);
-    });
+const mongoUri = process.env.MONGO_URI || process.env.MONGO_URI_2;
+
+if (!mongoUri) {
+    console.log("MongoDB connection failed: MONGO_URI is not defined in .env");
+} else {
+    mongoose.connect(mongoUri)
+        .then(() => {
+            console.log("MongoDB connected successfully!");
+        })
+        .catch((error) => {
+            console.log("MongoDB connection failed:");
+            console.log(error.message);
+        });
+}
 
 
 // ==========================
