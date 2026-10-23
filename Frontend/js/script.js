@@ -4,6 +4,12 @@
 
 
 
+const API_BASE_URL = window.location.hostname === "localhost"
+    ? "http://localhost:5000"
+    : "";
+
+const apiUrl = (path) => `${API_BASE_URL}${path}`;
+
 /* ===============================
    SEARCH PRODUCTS
 =============================== */
@@ -133,7 +139,7 @@ function displayProducts(productsToDisplay) {
 
 if (productContainer) {
 
-    fetch("http://localhost:5000/api/products")
+    fetch(apiUrl("/api/products"))
         .then(response => response.json())
         .then(products => {
 
@@ -231,7 +237,7 @@ if (cartContainer) {
 
     console.log("Cart:", cart);
 
-    fetch("http://localhost:5000/api/products")
+    fetch(apiUrl("/api/products"))
         .then(response => response.json())
         .then(products => {
 
@@ -515,7 +521,7 @@ if (checkoutItems) {
     const cart =
         JSON.parse(localStorage.getItem("cart")) || [];
 
-    fetch("http://localhost:5000/api/products")
+    fetch(apiUrl("/api/products"))
         .then(response => response.json())
         .then(products => {
 
@@ -624,7 +630,7 @@ if (checkoutForm) {
             return;
         }
 
-        fetch("http://localhost:5000/api/products")
+        fetch(apiUrl("/api/products"))
             .then(response => response.json())
             .then(products => {
 
@@ -710,7 +716,7 @@ if (checkoutForm) {
                 };
 
                 return fetch(
-                    "http://localhost:5000/api/orders",
+                    apiUrl("/api/orders"),
                     {
 
                         method: "POST",
@@ -867,7 +873,7 @@ if (loginForm) {
 
         try {
             const response = await fetch(
-                "http://localhost:5000/api/auth/login",
+                apiUrl("/api/auth/login"),
                 {
                     method: "POST",
                     headers: {
@@ -916,7 +922,7 @@ if (registerForm) {
 
         try {
             const response = await fetch(
-                "http://localhost:5000/api/auth/register",
+                apiUrl("/api/auth/register"),
                 {
                     method: "POST",
                     headers: {
@@ -998,7 +1004,7 @@ if (wishlistContainer) {
         try {
 
             const response = await fetch(
-                "http://localhost:5000/api/products"
+                apiUrl("/api/products")
             );
 
             const products = await response.json();
