@@ -10,7 +10,7 @@ const productRoutes = require("../Backend/routes/productRoutes");
 const orderRoutes = require("../Backend/routes/orderRoutes");
 const authRoutes = require("../Backend/routes/authRoutes");
 
-app.use(cors());
+app.use(cors({ origin: true, credentials: true }));
 app.use(express.json());
 
 app.use("/api/products", productRoutes);

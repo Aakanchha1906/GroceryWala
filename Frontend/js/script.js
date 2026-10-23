@@ -4,9 +4,11 @@
 
 
 
-const API_BASE_URL = ["localhost", "127.0.0.1"].includes(window.location.hostname)
-    ? "http://localhost:5000"
-    : "https://grocerywala.netlify.app/";
+const API_BASE_URL = window.GROCERYWALA_API_URL || (
+    ["localhost", "127.0.0.1"].includes(window.location.hostname)
+        ? "http://localhost:5000"
+        : "https://grocery-wala-backend.vercel.app"
+);
 
 const apiUrl = (path) => `${API_BASE_URL}${path}`;
 
